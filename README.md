@@ -1,7 +1,7 @@
-# TB375FC prebuilt kernel - LineageOS 23.2
+# TB375FC prebuilt kernel - DerpFest 17
 
 Prebuilt kernel for the Lenovo Xiaoxin Pad Pro 12.7 (2025), `TB375FC`
-(MediaTek Dimensity 8300 / MT6897), as used by the LineageOS 23.2 (Android 16)
+(MediaTek Dimensity 8300 / MT6897), as used by the DerpFest 17 (Android 17)
 device tree.
 
 ## Contents
@@ -21,10 +21,9 @@ Android clang 17.0.2 (r487747c), LLD 17.0.2
 
 6.1 GKI kernel on the `android14-11` KMI. MT6897 device-specific drivers that
 have no published source ship as stock `.ko`; KMI stability lets them load
-against this Image.
+against this Image. These describe the checked-in reference prebuilts and do
+not indicate that the DerpFest device-tree prebuilts have changed.
 
-## Use
-
-The device tree (`android_device_lenovo_TB375FC`) consumes this as a prebuilt
-via `TARGET_PREBUILT_KERNEL`, so there is no kernel source to clone to build
-the ROM.
+This checkout contains reference prebuilts only. The DerpFest device tree
+consumes its own kernel, DTB and modules from
+`device/lenovo/TB375FC/prebuilts/` via `TARGET_PREBUILT_KERNEL`.
